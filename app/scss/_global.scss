@@ -42,3 +42,15 @@ body{
   line-height: 40px;
   color: $title;
 }
+
+.subtitle{
+    font-size: 10px;
+    color: $accent;
+    margin-bottom: -7px;
+  }
+
+  .more{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }

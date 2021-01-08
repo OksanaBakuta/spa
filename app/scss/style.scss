@@ -89,41 +89,6 @@
   }
 }
 
-.slick-arrow{
-  position: absolute;
-  bottom: 15px;
-  z-index: 2;
-  font-size: 1px;
-  line-height: 1px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  width: 30px;
-  height: 26px;
-  cursor: pointer;
-  &::before{
-    content: '';
-    position: absolute;
-    width: 34px;
-    height: 30px;
-    left: 0;
-    top: 0;
-    background-image: url('../images/icons/arrow-right.svg');
-    background-repeat: no-repeat;
-  }
-}
-
-.slick-prev{
-  left: 15px;
-  &::before{
-    transform: rotate(180deg);
-  }
-}
-
-.slick-next{
-  right: 15px;
-}
-
 .slick-dots{
   position: absolute;
   bottom: 14px;
@@ -163,11 +128,6 @@
     background-position: right top;
     padding-top: 10px;
   }
-  &__subtitle{
-    font-size: 10px;
-    color: $accent;
-    margin-bottom: -7px;
-  }
   &__title{
     margin-bottom: 12px;
     max-width: 297px;
@@ -201,7 +161,43 @@
   }
 }
 
-
+.team{
+  background-color: $bg;
+  padding: 41px 0 61px;
+  position: relative;
+  .more{
+    bottom: 61px;
+  }
+  &__title{
+    max-width: 450px;
+    margin-bottom: 10px;
+  }
+  &__slider{
+    padding-bottom: 67px;
+  }
+  &__item{
+    max-width: 202px;
+  }
+  &__img-box{
+    overflow: hidden;
+    max-height: 253px;
+    width: 100%;
+    margin-bottom: 9px;
+  }
+  &__img{
+    object-fit: cover;
+  }
+  &__name{
+    margin-bottom: 5px;
+  }
+  &__name-link{
+    font-size: 16px;
+    color: $default;
+  }
+  &__item-descr{
+    color: $accent;
+  }
+}
 
 
 
