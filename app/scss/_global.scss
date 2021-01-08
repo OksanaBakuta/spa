@@ -7,6 +7,7 @@ body{
   @extend %montserrat-400;
   font-size: 14px;
   line-height: 20px;
+  color: $default;
 }
 
 .container{
@@ -22,6 +23,7 @@ body{
 }
 
 .btn-link{
+  @extend %playfairdisplay-700;
   display: inline-block;
   border: 2px solid $btn;
   padding: 12px 16px;
@@ -32,4 +34,11 @@ body{
     border: 2px solid $accent;
     color: $accent;
   }
+}
+
+.title{
+  @extend %playfairdisplay-700;
+  font-size: 32px;
+  line-height: 40px;
+  color: $title;
 }

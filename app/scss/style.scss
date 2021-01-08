@@ -152,6 +152,55 @@
   }
 }
 
+.about{
+  padding: 68px 0;
+  background-image: url('../images/line-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top 27px center;
+  &__container{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top;
+    padding-top: 10px;
+  }
+  &__subtitle{
+    font-size: 10px;
+    color: $accent;
+    margin-bottom: -7px;
+  }
+  &__title{
+    margin-bottom: 12px;
+    max-width: 297px;
+  }
+  &__text{
+    max-width: 400px;
+  }
+  & .about__list{
+    margin: 25px 0 15px 15px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 180px;
+    max-width: 475px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #F2E4D6;
+      left: 45%;
+      top: 0;
+    }
+  }
+  &__item{
+    max-width: 220px;
+    margin-bottom: 15px;
+  }
+}
+
 
 
 
