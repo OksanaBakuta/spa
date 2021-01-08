@@ -1,0 +1,29 @@
+@font-face{
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  font-style: normsl;
+  src: local('Montserrat-Regular'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'PlayfairDisplay-Bold';
+  font-weight: 700;
+  font-style: normsl;
+  src: local('PlayfairDisplay-Bold'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'PlayfairDisplaySC-Black';
+  font-weight: 900;
+  font-style: normsl;
+  src: local('PlayfairDisplaySC-Black'),
+        url('../fonts/PlayfairDisplaySC-Black.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Black.woff') format('woff');
+  font-display: swap;
+}

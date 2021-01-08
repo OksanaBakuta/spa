@@ -1,7 +1,164 @@
 @import 'vars';
 @import 'fonts';
+@import 'libs';
 @import 'reset';
 @import 'global';
+
+.header-top{
+  background-color: $bg;
+  padding: 15px 0;
+  &__inner{
+    max-width: 1040px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item{
+    font-size: 15px;
+    color: $accent;
+  }
+  &__item + .menu__item{
+    margin-left: 15px;
+  }
+  &__link{
+    color: inherit;
+  }
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  &__link + .social__link{
+    margin-left: 13px;
+  }
+  &__link{
+    transition: all .3s;
+    &:hover{
+      transform: scale(2)
+    }
+  }
+}
+
+
+.slider{
+  &__item{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-inner{
+    min-height: calc(100vh - 52px);
+    max-width: 1040px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__item-content{
+    max-width: 380px;
+    margin-left: auto;
+  }
+  &__subtitle{
+    font-size: 12px;
+    line-height: 12px;
+    color: $accent;
+    text-transform: uppercase;
+  }
+  &__title{
+    @extend %playfairdisplaysc-900;
+    font-size: 54px;
+    line-height: 80px;
+    color: $btn;
+    text-transform: uppercase;
+  }
+  &__text{
+    max-width: 232px;
+    color: $title;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+.slick-arrow{
+  position: absolute;
+  bottom: 15px;
+  z-index: 2;
+  font-size: 1px;
+  line-height: 1px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.slick-prev{
+  left: 15px;
+  &::before{
+    transform: rotate(180deg);
+  }
+}
+
+.slick-next{
+  right: 15px;
+}
+
+.slick-dots{
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  & button{
+    font-size: 1px;
+    background-color: transparent;
+    border: 1px solid $accent;
+    border-radius: 50%;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    outline: none;
+  }
+  li + li{
+    margin-left: 10px;
+  }
+}
+
+.slick-active{
+  button{
+    background-color: $accent;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
