@@ -87,11 +87,14 @@
     line-height: 21px;
     margin-bottom: 20px;
   }
+  .slick-dots{
+    bottom: 14px;
+  }
 }
 
 .slick-dots{
   position: absolute;
-  bottom: 14px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -163,7 +166,7 @@
 
 .team{
   background-color: $bg;
-  padding: 41px 0 61px;
+  padding: 41px 0 69px;
   position: relative;
   .more{
     bottom: 61px;
@@ -173,7 +176,7 @@
     margin-bottom: 10px;
   }
   &__slider{
-    padding-bottom: 67px;
+    padding-bottom: 52px;
   }
   &__item{
     max-width: 202px;
@@ -199,8 +202,88 @@
   }
 }
 
+.services{
+  padding: 65px 0 40px;
+  position: relative;
+  background-image: url('../images/line-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top 27px center;
+  .more{
+    bottom: 30px;
+  }
+  &__slider{
+    display: none;
+    &.services__slider--active{
+      display: block;
+      padding-bottom: 56px;
+      position: relative;
+      .services__item{
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+  &__item{
+    height: 360px;
+    width: 244px !important;
+    padding: 46px 30px 29px;
+    border: 1px solid #F2E4D6;
+    text-align: center;
+  }
+  &__img-box{
+    overflow: hidden;
+    width: 157px;
+    height: 157px;
+    margin: 0 auto 28px;
+  }
+  &__img{
+    object-fit: cover;
+    width: 157px;
+    height: 157px;
+  }
+  &__title{
+    @extend %playfairdisplay-700;
+    font-size: 16px;
+    color: $btn;
+    margin-bottom: 13px;
+  }
+  &__title-link{
+    color: inherit;
+  }
+  &__num{
+    color: $accent;
+  }
+}
 
-
+.tabs{
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    @extend %playfairdisplay-700;
+    opacity: 0.5;
+    &.tabs__btn--active{
+      opacity: 1;
+    }
+  }
+  &__img-box{
+    display: block;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: $accent;
+    max-width: 70px;
+    margin: 0 auto 8px;
+  }
+}
 
 
 
