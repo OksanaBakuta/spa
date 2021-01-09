@@ -27,7 +27,7 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 3000
   });
-  
+
   $('.services__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -35,6 +35,12 @@ $(function(){
     dots: true,
   });
 
+  $('.gallery__slider').slick({
+    rows: 2,
+    slidesPerRow: 3,
+    dots: true,
+    arrows: false
+  });
 
 
 });

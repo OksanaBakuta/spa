@@ -320,7 +320,29 @@
   } 
 }
 
-
+.gallery{
+  padding: 91px 0 34px;
+  text-align: center;
+  position: relative;
+  background-image: url('../images/line-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+  &__slider{
+    margin-top: 26px;
+    padding-bottom: 26px;
+  }
+  &__item{
+    max-width: 343px;
+    height: 218px;
+    overflow: hidden;
+    margin: 0 12px 15px;
+  }
+  &__item-img{
+    object-fit: cover;
+    height: 218px;
+    min-width: 343px;
+  }
+}
 
 
 
