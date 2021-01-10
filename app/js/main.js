@@ -25,12 +25,12 @@ $(function(){
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 4000
   });
 
   $('.services__slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     arrows: false,
     dots: true,
   });
