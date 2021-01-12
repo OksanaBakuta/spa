@@ -17,6 +17,36 @@
   }
 }
 
+.menu-btn{
+  width: 20px;
+  height: 15px;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  span{
+    width: 100%;
+    height: 2px;
+    background-color: $accent;
+  }
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $accent;
+    transition: all .3s;
+  }
+  &::before{
+    top: 0;
+  }
+  &::after{
+    bottom: 0;
+  }
+}
+
 .menu{
   &__list{
     display: flex;
