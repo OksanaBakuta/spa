@@ -166,10 +166,9 @@
     margin-bottom: 44px;
   }
   &__list{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 270px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     position: relative;
     list-style-type: none;
     counter-reset: list-counter;
@@ -185,9 +184,8 @@
   }
   &__item{
     max-width: 210px;
-    min-height: 105px;
     position: relative;
-    padding: 36px 10px 0 0 ;
+    padding: 36px 10px 11px 0 ;
     margin-left: 10px;
     border-right: 1px solid #F2E4D6;
     &::before{
@@ -198,7 +196,7 @@
       left: 10px;
       @extend %playfairdisplay-700;
     }
-    &:nth-child(5){
+    &:nth-child(3){
       border-right: none;
     }
     &:nth-child(6){
@@ -216,7 +214,7 @@
     height: 100%;
     object-fit: cover;
   }
-  &__btn{
+  &__link{
     margin-top: 84px;
   }
 }
