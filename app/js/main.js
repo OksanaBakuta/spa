@@ -3,6 +3,7 @@ $(function(){
   $('.menu-btn').on('click', function(){
     $('.menu').toggleClass('menu--active');
     $('.menu-btn').toggleClass('menu-btn--active');
+    $('body').toggleClass('body-active');
   });
 
   $('.tabs__btn').on('click', function(e){
@@ -85,7 +86,7 @@ $(function(){
         breakpoint: 450,
         settings: {
           slidesToShow: 1.5,
-          infinite: false
+          infinite: false,
         }
       },
       {
@@ -93,8 +94,6 @@ $(function(){
         settings: {
           slidesToShow: 1,
           infinite: false,
-          autoplay: true,
-          autoplaySpeed: 3000
         }
       },
     ]
@@ -104,7 +103,15 @@ $(function(){
     rows: 2,
     slidesPerRow: 3,
     dots: true,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1240,
+        settings: {
+          slidesPerRow: 2,
+        }
+      },
+    ]
   });
 
 
