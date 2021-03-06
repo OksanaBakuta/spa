@@ -14,8 +14,9 @@
     <div class="header-top">
       <div class="header-top__inner">
         <a class="logo" href="#">
-          <img class="logo-img" src="images/logo.svg" alt="logo">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
+        <div class="menu-btn"><span></span></div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -51,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="header-content">
+    <div class="header__content">
       <div class="slider">
         <div class="slider__item" style="background-image: url('images/header-bg.jpg');">
           <div class="slider__item-inner">
@@ -59,8 +60,11 @@
               <p class="slider__subtitle">#1_в_минске</p>
               <div class="slider__title">Спа-бутик</div>
               <p class="slider__text">Подарите себе роскошь, которую вы заслуживаете</p>
-              <a class="slider__link btn-link" href="#">Забронировать</a>
+              <a class="slider__link btn-link" href="#"> <span>Забронировать</span> </a>
             </div>
+            <a class="more header__more" href="#">
+              <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+            </a>
           </div>
         </div>
         <div class="slider__item" style="background-image: url('images/header-bg2.jpg');">
@@ -69,8 +73,11 @@
               <p class="slider__subtitle">#лучшее_spa_в_минске</p>
               <div class="slider__title">Спа-бутик</div>
               <p class="slider__text">Расслабьтесь вместе со своей второй половинкой</p>
-              <a class="slider__link btn-link" href="#">Забронировать</a>
+              <a class="slider__link btn-link" href="#"> <span>Забронировать</span> </a>
             </div>
+            <a class="more header__more" href="#">
+              <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+            </a>
           </div>
         </div>
         <div class="slider__item" style="background-image: url('images/header-bg3.jpg');">
@@ -79,114 +86,127 @@
               <p class="slider__subtitle">#лучшее_spa_в_минске</p>
               <div class="slider__title">Спа-бутик</div>
               <p class="slider__text">Подарите себе релакс для души и тела</p>
-              <a class="slider__link btn-link" href="#">Забронировать</a>
+              <a class="slider__link btn-link" href="#"> <span>Забронировать</span> </a>
             </div>
+            <a class="more header__more" href="#">
+              <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+            </a>
           </div>
         </div>
       </div>
-      <a class="more" href="#">
-        <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
-      </a>
+
     </div>
   </header>
 
   <main>
 
-    <section class="about">
-      <div class="container about__container" style="background-image: url('images/about-bg.jpg');">
-        <div class="subtitle">О нас</div>
-        <h4 class="title about__title">Жизнь меняется здесь</h4>
-        <p class="about__text">
-          Мы изменили определение спа, создав новаторский бренд, который обещает вам самое ценное направление из всех:
-          истинное
-          благополучие ума, тела и духа.
-        </p>
-        <ol class="about__list">
-          <li class="about__item">
-            Мастера с высшим образованием
-          </li>
-          <li class="about__item">
-            Программа лояльности для постоянных гостей
-          </li>
-          <li class="about__item">
-            Большой выбор СПА-ритуалов и программ
-          </li>
-          <li class="about__item">
-            Профессиональная косметика из США
-          </li>
-          <li class="about__item">
-            Оздоровление питанием
-          </li>
-        </ol>
-        <a class="btn-link" href="#">Забронировать</a>
+    <section class="about line-bg">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="subtitle">О нас</div>
+            <h4 class="title about__title">Жизнь меняется здесь</h4>
+            <p class="about__text">
+              Мы изменили определение спа, создав новаторский бренд, который обещает вам самое ценное направление из
+              всех:
+              истинное
+              благополучие ума, тела и духа.
+            </p>
+            <ol class="about__list">
+              <li class="about__item">
+                Мастера с высшим образованием
+              </li>
+              <li class="about__item">
+                Программа лояльности для постоянных гостей
+              </li>
+              <li class="about__item">
+                Большой выбор СПА-ритуалов и программ
+              </li>
+              <li class="about__item">
+                Косметика из США и Израиля
+              </li>
+              <li class="about__item">
+                Оздоровление питанием
+              </li>
+            </ol>
+            <a class="about__link btn-link" href="#"> <span>Забронировать</span> </a>
+          </div>
+          <div class="about__img-box img-border">
+            <img class="about__img" src="images/about-bg.jpg" alt="bacground images">
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="team">
-      <div class="container-small">
+      <div class="container">
         <div class="subtitle">Наши мастера</div>
-        <h4 class="title team__title">У нас работают лучшие специалисты страны</h4>
-        <div class="team__slider">
-          <div class="team__item">
-            <div class="team__img-box">
-              <a class="team__img-link" href="#">
-                <img class="team__img" src="images/team/1.jpg" alt="photo team">
-              </a>
+        <h4 class="title">
+          У нас работают лучшие специалисты
+        </h4>
+        <div class="team__inner">
+          <div class="team__slider">
+            <div class="team__item">
+              <div class="team__img-box img-border">
+                <a class="team__img-link" href="#">
+                  <img class="team__img" src="images/team/1.jpg" alt="photo team">
+                </a>
+              </div>
+              <h6 class="team__name">
+                <a class="team__name-link" href="#">Матвей Наумов</a>
+              </h6>
+              <p class="team__item-descr">
+                Реабилитолог, опыт работы более 8 лет
+              </p>
             </div>
-            <h6 class="team__name">
-              <a class="team__name-link" href="#">Матвей Наумов</a>
-            </h6>
-            <p class="team__item-descr">
-              Реабилитолог, опыт работы более 8 лет
-            </p>
-          </div>
-          <div class="team__item">
-            <div class="team__img-box">
-              <a class="team__img-link" href="#">
-                <img class="team__img" src="images/team/2.jpg" alt="photo team">
-              </a>
+            <div class="team__item">
+              <div class="team__img-box img-border">
+                <a class="team__img-link" href="#">
+                  <img class="team__img" src="images/team/2.jpg" alt="photo team">
+                </a>
+              </div>
+              <h6 class="team__name">
+                <a class="team__name-link" href="#">Маргарита Зуева</a>
+              </h6>
+              <p class="team__item-descr">
+                Терапевт, опыт работы более 10 лет
+              </p>
             </div>
-            <h6 class="team__name">
-              <a class="team__name-link" href="#">Маргарита Зуева</a>
-            </h6>
-            <p class="team__item-descr">
-              Терапевт, опыт работы более 10 лет
-            </p>
-          </div>
-          <div class="team__item">
-            <div class="team__img-box">
-              <a class="team__img-link" href="#">
-                <img class="team__img" src="images/team/3.jpg" alt="photo team">
-              </a>
+            <div class="team__item">
+              <div class="team__img-box img-border">
+                <a class="team__img-link" href="#">
+                  <img class="team__img" src="images/team/3.jpg" alt="photo team">
+                </a>
+              </div>
+              <h6 class="team__name">
+                <a class="team__name-link" href="#">Марина Пахомова</a>
+              </h6>
+              <p class="team__item-descr">
+                Физиотерапевт, опыт работы более 10 лет
+              </p>
             </div>
-            <h6 class="team__name">
-              <a class="team__name-link" href="#">Марина Пахомова</a>
-            </h6>
-            <p class="team__item-descr">
-              Физиотерапевт, опыт работы более 10 лет
-            </p>
-          </div>
-          <div class="team__item">
-            <div class="team__img-box">
-              <a class="team__img-link" href="#">
-                <img class="team__img" src="images/team/2.jpg" alt="photo team">
-              </a>
+            <div class="team__item">
+              <div class="team__img-box img-border">
+                <a class="team__img-link" href="#">
+                  <img class="team__img" src="images/team/2.jpg" alt="photo team">
+                </a>
+              </div>
+              <h6 class="team__name">
+                <a class="team__name-link" href="#">Маргарита Зуева</a>
+              </h6>
+              <p class="team__item-descr">
+                Терапевт, опыт работы более 10 лет
+              </p>
             </div>
-            <h6 class="team__name">
-              <a class="team__name-link" href="#">Маргарита Зуева</a>
-            </h6>
-            <p class="team__item-descr">
-              Терапевт, опыт работы более 10 лет
-            </p>
           </div>
+          <a class="more" href="#">
+            <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+          </a>
         </div>
       </div>
-      <a class="more" href="#">
-        <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
-      </a>
     </section>
 
-    <section class="services">
+    <section class="services line-bg">
       <div class="container">
         <div class="tabs">
           <div class="tabs__top">
@@ -227,7 +247,6 @@
               Макияж
             </a>
           </div>
-
           <div class="tabs__content">
             <div class="services__slider services__slider--active" id="content-1">
               <div class="services__item">
@@ -276,8 +295,31 @@
                 </h6>
                 <span class="services__num">MK12458OL</span>
               </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/services/1.3.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#">
+                    SPA-программа «Источник жизненных сил»</a>
+                </h6>
+                <span class="services__num">FR12536IK</span>
+              </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/header-bg3.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#"> Минеральное обёртывание
+                  </a>
+                </h6>
+                <span class="services__num">MK12458OL</span>
+              </div>
             </div>
-
             <div class="services__slider" id="content-2">
               <div class="services__item">
                 <div class="services__img-box">
@@ -302,6 +344,30 @@
                     СПА процедура "Массаж лица ручной"</a>
                 </h6>
                 <span class="services__num">MJ12505OI</span>
+              </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/services/2.3.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#">
+                    Маски для лица</a>
+                </h6>
+                <span class="services__num">MK2014556IU</span>
+              </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/services/2.4.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#">
+                    Чистка, массаж лица, парафиновая маска</a>
+                </h6>
+                <span class="services__num">BG147852Pj</span>
               </div>
               <div class="services__item">
                 <div class="services__img-box">
@@ -354,6 +420,31 @@
                   </a>
                 </h6>
                 <span class="services__num">MJ12505OI</span>
+              </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/services/3.3.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#">
+                    Массаж общий
+                  </a>
+                </h6>
+                <span class="services__num">MK2014556IU</span>
+              </div>
+              <div class="services__item">
+                <div class="services__img-box">
+                  <a class="services__img-link" href="#">
+                    <img class="services__img" src="images/services/3.4.jpg" alt="images">
+                  </a>
+                </div>
+                <h6 class="services__title">
+                  <a class="services__title-link" href="#">
+                    Общий лечебно-оздоровительный массаж</a>
+                </h6>
+                <span class="services__num">BG147852Pj</span>
               </div>
               <div class="services__item">
                 <div class="services__img-box">
@@ -476,17 +567,18 @@
                 <span class="services__num">MK2014556IU</span>
               </div>
             </div>
+            <a class="more" href="#">
+              <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+            </a>
           </div>
         </div>
-        <a class="more" href="#">
-          <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
-        </a>
+      </div>
     </section>
 
     <section class="programs">
-      <div class="container-small">
+      <div class="container">
         <div class="subtitle">Наши программы</div>
-        <h4 class="title">Уникальные программы проверенные сотнями клиентов</h4>
+        <h4 class="title programs__title">Программы проверенные сотнями клиентов</h4>
         <div class="programs__items">
           <div class="programs__item">
             <img class="programs__img" src="images/icons/programs/1.svg" alt="prigram icon">
@@ -531,55 +623,58 @@
             </a>
           </div>
         </div>
+        <a class="slider__link btn-link" href="#"> <span>Забронировать</span> </a>
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery line-bg">
       <div class="container">
         <div class="subtitle">Что мы предлагаем</div>
         <h4 class="title">Фотогаллерея</h4>
-        <div class="gallery__slider">
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/1.jpg" alt="photo">
+        <div class="gallery__inner">
+          <div class="gallery__slider">
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/1.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/2.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/3.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/4.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/5.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/gallery/6.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/services/1.1.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/services/2.1.jpg" alt="photo">
+            </div>
+            <div class="gallery__item img-border">
+              <img class="gallery__item-img" src="images/services/3.1.jpg" alt="photo">
+            </div>
           </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/2.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/3.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/4.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/5.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/gallery/6.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/services/1.1.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/services/2.1.jpg" alt="photo">
-          </div>
-          <div class="gallery__item">
-            <img class="gallery__item-img" src="images/services/3.1.jpg" alt="photo">
-          </div>
+          <a class="more" href="#">
+            <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
+          </a>
         </div>
       </div>
-      <a class="more" href="#">
-        <img class="more__img" src="images/icons/arrow-right.svg" alt="more">
-      </a>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container-small">
+    <div class="container">
       <div class="footer__inner">
         <div class="footer__item">
           <a class="logo" href="#">
-            <img class="logo-img" src="images/logo.svg" alt="logo">
+            <img class="logo__img footer__logo-img" src="images/logo.svg" alt="logo">
           </a>
           <div class="footer__work">
             <div class="footer__work-item">Будни:</div>
